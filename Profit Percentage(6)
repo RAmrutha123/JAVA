@@ -1,0 +1,14 @@
+
+import java.util.Scanner;
+class Pro
+{
+    public static void main(String[] args)
+    {
+        Scanner sc=new Scanner(System.in);
+        double x = sc.nextDouble();
+        double y = sc.nextDouble();
+        double a = y-x;
+        double b = (a/x)*100;
+        System.out.printf("%.2f", b);
+    }
+}
