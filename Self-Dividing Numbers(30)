@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class SelfDividingNumbers {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int A = sc.nextInt();   
+        int B = sc.nextInt();   
+
+        for (int num = A; num <= B; num++) {
+
+            int temp = num;     
+            boolean isSelfDividing = true;  
+            while (temp > 0) {
+                int digit = temp % 10;  
+
+                if (digit == 0 || num % digit != 0) {
+                    isSelfDividing = false;  
+                    break;                   
+                }
+
+                temp = temp / 10;  
+            }
+
+            if (isSelfDividing) {
+                System.out.print(num + " ");
+            }
+        }
+
+        sc.close();
+    }
+}
