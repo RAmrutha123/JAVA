@@ -1,0 +1,16 @@
+
+import java.util.*;
+class Dig{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+            int digit=n%10;
+            int f=n;
+            while(f>=10){
+                f=f/10;
+            }
+        int sum=f+digit;
+        System.out.println(sum);
+        sc.close();
+    }
+}
