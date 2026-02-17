@@ -1,0 +1,14 @@
+
+import java.util.*;
+class Wei{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int x=sc.nextInt();
+        int a=sc.nextInt();
+        int b=sc.nextInt();
+        int y=a+b;
+        int z=x*3-y;
+        System.out.print(z);
+        sc.close();
+    }
+}
