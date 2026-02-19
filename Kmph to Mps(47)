@@ -1,0 +1,12 @@
+
+import java.util.*;
+class Kmph{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        double ans=n*(5.0/18.0);
+        System.out.printf("%.2f",ans);
+        sc.close();
+
+    }
+}
