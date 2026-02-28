@@ -1,0 +1,15 @@
+
+import java.util.*;
+public class Ammu{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        String s=sc.nextLine();
+        if(s.length() == 10 && s.charAt(0)!=0){
+            System.out.println("Valid");
+        }
+        else{
+            System.out.println("Invalid");
+        }
+        sc.close();
+    }
+}
